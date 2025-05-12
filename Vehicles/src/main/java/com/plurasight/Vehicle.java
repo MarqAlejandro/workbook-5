@@ -14,6 +14,25 @@ public class Vehicle {
     private int cargoCapacity;
     private int fuelCapacity;
 
+    public Vehicle(String typeOfVehicle, String make, String model, int passengerCount, int travelRange, int year, String VIN, int odometer, boolean isElectric, String color, int cargoCapacity, int fuelCapacity) {
+        this.typeOfVehicle = typeOfVehicle;
+        this.make = make;
+        this.model = model;
+        this.passengerCount = passengerCount;
+        this.travelRange = travelRange;
+        this.year = year;
+        this.VIN = VIN;
+        this.odometer = odometer;
+        this.isElectric = isElectric;
+        this.color = color;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    public Vehicle() {
+
+    }
+
     public String getTypeOfVehicle() {
         return typeOfVehicle;
     }

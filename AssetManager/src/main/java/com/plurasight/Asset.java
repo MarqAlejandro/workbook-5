@@ -2,9 +2,9 @@ package com.plurasight;
 
 public class Asset {
 
-    private String description;
-    private String dateAcquired;
-    private double originalCost;
+    protected String description;
+    protected String dateAcquired;
+    protected double originalCost;
 
     public Asset(String description, String dateAcquired, double originalCost) {
         this.description = description;
@@ -35,4 +35,10 @@ public class Asset {
     public void setOriginalCost(double originalCost) {
         this.originalCost = originalCost;
     }
+
+    public double getValue(){
+        return originalCost;
+    }
+
+
 }
